@@ -51,7 +51,7 @@ video.addEventListener('play', () => {
         redirect: 'follow'
       };
 
-      fetch("https://cors-vertra.herokuapp.com/http://localhost:8000/facial/", requestOptions)
+      fetch("http://127.0.0.1:8000/facial/", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
